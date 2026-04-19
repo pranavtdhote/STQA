@@ -79,3 +79,5 @@
   </build>
 </project>
 
+<!-- //javac -cp ".;lib/*" -d . App.java
+//java -cp ".;lib/*" com.demo.App -->
