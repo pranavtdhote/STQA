@@ -65,3 +65,68 @@ public class StudentMarks {
         }
     }
 }
+
+// import java.util.*;
+
+// class Student {
+//     String name;
+//     int[] marks;
+
+//     Student(String name, int[] marks) {
+//         this.name = name;
+//         this.marks = marks;
+//     }
+// }
+
+// public class StudentResult {
+
+//     // Any one subject > 60
+//     public static int countAny(List<Student> students) {
+//         int count = 0;
+
+//         for (Student s : students) {
+//             for (int m : s.marks) {
+//                 if (m > 60) {
+//                     count++;
+//                     break;
+//                 }
+//             }
+//         }
+//         return count;
+//     }
+
+//     // All subjects > 60
+//     public static int countAll(List<Student> students) {
+//         int count = 0;
+
+//         for (Student s : students) {
+//             boolean allAbove = true;
+
+//             for (int m : s.marks) {
+//                 if (m <= 60) {
+//                     allAbove = false;
+//                     break;
+//                 }
+//             }
+
+//             if (allAbove) count++;
+//         }
+//         return count;
+//     }
+
+//     public static void main(String[] args) {
+
+//         List<Student> students = new ArrayList<>();
+
+//         students.add(new Student("Amit", new int[]{70, 40}));
+//         students.add(new Student("Rahul", new int[]{80, 75}));
+//         students.add(new Student("Sneha", new int[]{55, 65}));
+//         students.add(new Student("Priya", new int[]{90, 88}));
+
+//         int anyCount = countAny(students);
+//         int allCount = countAll(students);
+
+//         System.out.println("Students with >60 in ANY subject: " + anyCount);
+//         System.out.println("Students with >60 in ALL subjects: " + allCount);
+//     }
+// }
